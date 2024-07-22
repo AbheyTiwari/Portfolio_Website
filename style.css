@@ -1,6 +1,4 @@
-@ media (max-width:width in px ) {
-}
-body {
+*{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,13 +7,12 @@ body {
 .hero-header {
     background-image: url("https://t3.ftcdn.net/jpg/07/36/07/18/360_F_736071809_9V7xRt7xxvApDF8fkmPsYPnHK12OHOkZ.jpg");
     background-size: cover;
-    height: 100vh;
-    width: 100%
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     padding: 20px;
+    margin-top:70px ;
   }
   
   .profile-pic {
@@ -89,4 +86,25 @@ body {
 
 #my-projects h2, #contact-me h2 {
     margin-top: 0;
+}
+@media (max-width: 760px){
+    .hero-header{
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width: 450px){
+    .profile-pic{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width:300px) {
+    .profile-pic{
+        width: 150px;
+        height: 150px;
+    }
+    .navbar{
+        height: 70px;
+    }
 }
