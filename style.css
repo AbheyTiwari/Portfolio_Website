@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-header {
+    background-image: url("https://t3.ftcdn.net/jpg/07/36/07/18/360_F_736071809_9V7xRt7xxvApDF8fkmPsYPnHK12OHOkZ.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  .profile-pic {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+
+.hero-header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-left: 20px;
+}
+
+.social-links li {
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    transition: filter 0.2s ease;
+}
+
+.social-links img:hover {
+    filter: grayscale(0);
+}
+
+.hero-header p {
+    font-size: 24px;
+    color: #fff2f2;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-link {
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #666;
+}
+
+#my-projects, #contact-me, #work {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("https://blog.stockvault.net/wp-content/uploads/2020/07/preview-319.jpg");
+    background-size: cover;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+#my-projects h2, #contact-me h2 {
+    margin-top: 0;
+}
