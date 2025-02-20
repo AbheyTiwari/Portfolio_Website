@@ -17,25 +17,28 @@
   
   .header-dark {
     background-color: #000;
-    padding: 1.5em 0;
+    padding: 10px;
     text-align: center;
     position: relative;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 150px; /* Added rounded corners */
+    margin: 10px; /* Added margin to prevent cutting corners */
   }
   
   .header-dark nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px; /* Ensuring nav items follow the rounded design */
   }
   
   .header-dark nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: space-around;
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
   
   .header-dark nav li {
@@ -47,13 +50,14 @@
     text-decoration: none;
     font-size: 1.2rem;
     padding: 0.5em 1em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 100px; /* Increased rounded effect on buttons */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
   }
   
   .header-dark nav a:hover {
     background-color: #f0f0f0;
     color: #333;
+    transform: scale(1.05); /* Slight hover animation */
   }
   
   /* Hero Section Styles */
