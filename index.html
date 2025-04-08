@@ -1,87 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhey Tiwari - Projects Timeline</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhey Tiwari | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: black;
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: rgba(0, 0, 0, 0.85);
+      animation: fadeIn 1.5s ease;
+      z-index: 2;
+      position: relative;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.2rem;
+    }
+    h2 {
+      margin: 2rem 0 1rem;
+      text-align: center;
+      font-size: 2rem;
+      border-bottom: 2px solid white;
+      display: inline-block;
+    }
+    nav {
+      background-color: #111;
+      padding: 1rem;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem auto;
+      width: fit-content;
+      position: relative;
+      z-index: 2;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: white;
+    }
+    .section {
+      padding: 2rem 4rem;
+      animation: slideUp 1s ease;
+      position: relative;
+      z-index: 2;
+    }
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .project:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .project img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 1rem;
+      margin: 1rem;
+    }
+    .project-info {
+      max-width: 500px;
+      margin: 1rem;
+    }
+    .skills, .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .skill {
+      background-color: #333;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+    }
+    .experience {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 1rem;
+    }
+    .img-placeholder {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #555;
+      margin: 1rem auto;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Animated twinkling stars */
+    .stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: transparent;
+      z-index: -2;
+      overflow: hidden;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 2s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+
+    .moon {
+      position: fixed;
+      top: 60px;
+      right: 80px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #f5f3ce 20%, #c4c3b7 100%);
+      box-shadow: 0 0 40px 10px rgba(255,255,200,0.3);
+      z-index: -1;
+    }
+  </style>
 </head>
 <body>
-
-  <header class="header-dark">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
+  <div class="stars"></div>
+  <div class="moon"></div>
+  <header>
+    <div class="img-placeholder"></div>
+    <h1>Abhey Tiwari</h1>
+    <p>Aspiring AI/ML Researcher | Full-Stack Developer | Tech Tinkerer</p>
   </header>
 
-  <section class="hero">
-    <h1 class="hero-heading">Abhey Tiwari</h1>
-    <h3 class="hero-subheading">Python | C++ | HTML | CSS | WordPress | Django | Automation</h3>
- </section>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+  </nav>
 
-<section class="timeline">
-    <h2>My Projects</h2>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>INDICA - The Multifunctional Assistant</h3>
-        <p><strong>Description:</strong> Developed a feature-rich virtual assistant using Python and API integrations, capable of web searches, music playback, app management, and more.</p>
-        <p><strong>Role:</strong> Lead Developer</p>
-      </div>
-      <br>
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>ANEME - Front end e-commerce website</h3>
-        <p><strong>Description:</strong> An e-commerce website designed to showcase Anime Merch</p>
-        <p><strong>Role:</strong> Lead Developer</p>
-      </div>
-      <br>
-      <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h3>Music Teaching ed-tech Company Website</h3>
-                <p><strong>Description:</strong> A front-end project showcasing the offerings and services of a music teaching company. This project focused on creating an engaging, professional interface to represent the company’s vision and attract students.</p>
-                <p><strong>Role:</strong> Lead Developer</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <!-- Experience Section -->
-<section class="experience">
-    <h2>Experience</h2> 
-    <div class="experience-item">
-        <div class="experience-box">
-          <h3>Full-Stack Developer Intern</h3>
-          <p><strong>Company:</strong> BeyondRiffs</p>
-          <p><strong>Duration:</strong> [Start Date] - Present</p>
-          <p>Currently working on full-stack development tasks, focusing on enhancing the web platform and improving user experience with a collaborative team environment.</p>
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <img src="https://via.placeholder.com/300x200?text=AI+Hallucination" alt="AI Hallucination" />
+        <div class="project-info">
+          <h3>AI Hallucination Detection</h3>
+          <p>Built a model to detect AI hallucinations and derived a mathematical probability formula to predict hallucination likelihood.</p>
         </div>
       </div>
-    <div class="experience-item">
-      <div class="experience-box">
-        <h3>Full-Stack Developer Intern</h3>
-        <p><strong>Company:</strong> Mangalam Valley Resort</p>
-        <p><strong>Duration:</strong> [Start Date] - [End Date]</p>
-        <p>Built the resort's entire website from scratch, implementing features like online bookings and managing all development tasks as the sole developer on the project.</p>
+      <div class="project">
+        <div class="project-info">
+          <h3>INDICA - Music Web App</h3>
+          <p>Frontend music website made to simulate a clean and immersive listening platform.</p>
+        </div>
+        <img src="https://via.placeholder.com/300x200?text=INDICA" alt="INDICA Music App" />
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/300x200?text=File+Sharing+App" alt="File Sharing App" />
+        <div class="project-info">
+          <h3>File Sharing Web App</h3>
+          <p>Full-stack file sharing system (like Google Drive) using Flask for backend. Allows file upload, download, and sharing.</p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-info">
+          <h3>Smart Keychain Device</h3>
+          <p>IoT security device using ESP32 to detect distress and send GPS via GSM. Built with TINYML and safety-first principles.</p>
+        </div>
+        <img src="https://via.placeholder.com/300x200?text=Smart+Keychain" alt="Smart Keychain" />
       </div>
     </div>
   </section>
-  
 
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Flask</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">AI/ML</div>
+      <div class="skill">TinyML</div>
+      <div class="skill">ESP32</div>
+      <div class="skill">Data Analysis</div>
+      <div class="skill">WordPress</div>
+      <div class="skill">React (Basics)</div>
+      <div class="skill">SQL</div>
+    </div>
+  </section>
 
-  <footer class="footer-dark">
-    <p>&copy; 2024 Abhey Tiwari | Maharaja Agrasen College</p>
-    <p>Connect with me: 
-      <a href="https://www.linkedin.com/in/abhey-tiwari-891710274/">LinkedIn</a> | 
-      <a href="https://github.com/AbheyTiwari">GitHub</a> | 
-      <a href="https://x.com/Abhey_Tiwari">Twitter</a>
-    </p>
-  </footer>
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="experience">
+      <h3>Beyonddriffs (Intern)</h3>
+      <p>Worked on web development and debugging tasks. Collaborated on feature design and optimization.</p>
+    </div>
+    <div class="experience">
+      <h3>AI Internship (Offered)</h3>
+      <p>Offered an internship to integrate and expand my AI-based cancer detection project.</p>
+    </div>
+  </section>
 
+  <script>
+    const starsContainer = document.querySelector('.stars');
+    for (let i = 0; i < 150; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.top = `${Math.random() * 100}vh`;
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.animationDelay = `${Math.random() * 3}s`;
+      star.style.opacity = Math.random();
+      starsContainer.appendChild(star);
+    }
+  </script>
 </body>
 </html>
