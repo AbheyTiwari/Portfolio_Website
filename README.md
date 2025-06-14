@@ -1,5 +1,5 @@
-Abhey Tiwari - Personal Portfolio Website
-This repository contains the source code for Abhey Tiwari's personal portfolio website, designed to showcase his expertise as a Software Engineer specializing in AI & Web Development. The website features a clean, modern design with interactive elements and is fully responsive across various devices.
+#Abhey Tiwari - Personal Portfolio Website
+#This repository contains the source code for Abhey Tiwari's personal portfolio website, designed to showcase his expertise as a Software Engineer specializing in AI & Web Development. The website features a clean, modern design with interactive elements and is fully responsive across various devices.
 
 Features
 Responsive Design: Adapts seamlessly to desktop, tablet, and mobile screens.
@@ -89,22 +89,3 @@ SEO & Open Graph Tags (index.html - in <head>):
 Update meta name="description" and meta name="keywords" for better search engine optimization.
 
 Crucially, update meta property="og:image" and meta property="og:url" with your specific website image and URL for accurate social media previews when shared.
-
-Usage / Deployment
-Since this is a static HTML website, deployment is straightforward:
-
-GitHub Pages: Push your code to a GitHub repository, then enable GitHub Pages in your repository settings. This provides a free, easy way to host your portfolio online.
-
-Any Static Hosting Service: Upload the index.html file (and any associated assets if you were to split CSS/JS back out) to a service like Netlify, Vercel, or Firebase Hosting.
-
-Contact
-Feel free to connect with me!
-
-Email: abheytiwarikvs@gmail.com
-
-LinkedIn: Your LinkedIn Profile
-
-GitHub: Your GitHub Profile
-
-License
-This project is open-source and available under the MIT License. (Consider creating a LICENSE file in your repository if you choose a license).
