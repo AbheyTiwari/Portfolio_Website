@@ -428,66 +428,176 @@
         /* Experience Timeline */
         .timeline {
             position: relative;
-            padding-left: 2rem;
+            padding-left: 0;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .timeline::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: var(--border);
+            display: none;
         }
 
         .timeline-item {
             position: relative;
-            padding-bottom: 3rem;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
         }
 
         .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -2.5rem;
-            top: 0;
-            width: 12px;
-            height: 12px;
-            background: var(--accent);
-            border-radius: 50%;
-            border: 3px solid var(--bg-primary);
+            display: none;
         }
 
         .timeline-content {
             background: var(--bg-secondary);
             border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
+            border-radius: 16px;
+            padding: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
         }
 
         .timeline-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 1rem;
+            margin-bottom: 0;
             flex-wrap: wrap;
             gap: 1rem;
+            padding: 2rem 2rem 1.5rem;
+            background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+            border-bottom: 1px solid var(--border);
         }
 
         .timeline-title {
-            font-size: 1.3rem;
-            font-weight: 600;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .timeline-title::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px var(--accent-glow);
         }
 
         .timeline-date {
             color: var(--text-tertiary);
             font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1rem;
+            background: var(--bg-tertiary);
+            border-radius: 50px;
+            border: 1px solid var(--border);
+        }
+
+        .timeline-date::before {
+            content: '\f073';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 400;
+            color: var(--accent);
         }
 
         .timeline-company {
             color: var(--accent);
-            font-size: 1rem;
-            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+
+        .timeline-company::before {
+            content: '\f1ad';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 400;
+        }
+
+        .timeline-highlights {
+            list-style: none;
+            padding: 2rem;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .timeline-highlights li {
+            position: relative;
+            padding: 1.2rem 1.5rem 1.2rem 3.5rem;
+            margin-bottom: 0;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            background: var(--bg-tertiary);
+            border-radius: 10px;
+            border-left: 3px solid var(--accent);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-highlights li:hover {
+            background: rgba(59, 130, 246, 0.05);
+            transform: translateX(5px);
+            border-left-width: 4px;
+        }
+
+        .timeline-highlights li::before {
+            content: '';
+            position: absolute;
+            left: 1.2rem;
+            top: 1.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+
+        .timeline-highlights li::after {
+            content: '\f061';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            right: 1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--accent);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-highlights li:hover::after {
+            opacity: 1;
+            right: 1rem;
+        }
+
+        .timeline-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Stats badges within highlights */
+        .stat-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.2rem 0.6rem;
+            background: var(--accent-glow);
+            color: var(--accent);
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.9em;
         }
 
         /* Contact Section */
@@ -537,6 +647,335 @@
         }
 
         .contact-card a:hover {
+            color: var(--accent);
+        }
+
+        /* Interactive Contact Cards */
+        .contact-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .contact-card-interactive {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card-interactive::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--gradient);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .contact-card-interactive:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-card-interactive:hover::before {
+            transform: scaleX(1);
+        }
+
+        .contact-icon-large {
+            width: 80px;
+            height: 80px;
+            background: var(--accent-glow);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: var(--accent);
+            transition: all 0.3s ease;
+        }
+
+        .contact-card-interactive:hover .contact-icon-large {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .contact-card-interactive h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .contact-card-interactive p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Email Card Flip Effect */
+        .email-card {
+            perspective: 1000px;
+            min-height: 320px;
+        }
+
+        .card-front,
+        .card-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 3rem 2rem;
+            backface-visibility: hidden;
+            transition: transform 0.6s ease;
+        }
+
+        .card-front {
+            transform: rotateY(0deg);
+        }
+
+        .card-back {
+            transform: rotateY(180deg);
+        }
+
+        .email-card.flipped .card-front {
+            transform: rotateY(-180deg);
+        }
+
+        .email-card.flipped .card-back {
+            transform: rotateY(0deg);
+        }
+
+        .reveal-btn,
+        .copy-btn {
+            padding: 0.8rem 1.8rem;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .reveal-btn:hover,
+        .copy-btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .copy-btn.copied {
+            background: #10b981;
+        }
+
+        .contact-info {
+            display: block;
+            color: var(--accent);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            word-break: break-all;
+            text-decoration: none;
+        }
+
+        /* Phone Card Hover Reveal */
+        .phone-reveal {
+            position: relative;
+            margin: 1.5rem 0;
+            font-size: 1.3rem;
+            font-weight: 600;
+            height: 2rem;
+        }
+
+        .phone-blur,
+        .phone-clear {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.4s ease;
+        }
+
+        .phone-blur {
+            opacity: 1;
+            filter: blur(8px);
+        }
+
+        .phone-clear {
+            opacity: 0;
+            color: var(--accent);
+        }
+
+        .phone-card:hover .phone-blur {
+            opacity: 0;
+            filter: blur(0);
+        }
+
+        .phone-card:hover .phone-clear {
+            opacity: 1;
+        }
+
+        .contact-link-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.8rem;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link-btn:hover {
+            background: var(--accent);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        /* Location Card */
+        .location-text {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .location-subtext {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .availability-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1.2rem;
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Social Connect Section */
+        .social-connect {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .social-connect h3 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+        }
+
+        .social-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link i:first-child {
+            font-size: 2rem;
+            color: var(--accent);
+            transition: transform 0.3s ease;
+        }
+
+        .social-info {
+            flex: 1;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social-name {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .social-handle {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .social-link i:last-child {
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--bg-secondary);
+            border-color: var(--accent);
+            transform: translateX(5px);
+        }
+
+        .social-link:hover i:first-child {
+            transform: scale(1.2);
+        }
+
+        .social-link:hover i:last-child {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .social-link.github:hover i:first-child {
+            color: #ffffff;
+        }
+
+        .social-link.linkedin:hover i:first-child {
+            color: #0077b5;
+        }
+
+        .social-link.email:hover i:first-child {
+            color: #ea4335;
+        }
+
+        /* Response Badge */
+        .response-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1rem 2rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            border-radius: 50px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .response-badge i {
             color: var(--accent);
         }
 
@@ -608,11 +1047,32 @@
             }
 
             .timeline {
-                padding-left: 1.5rem;
+                padding-left: 0;
             }
 
             .timeline-item::before {
                 left: -2rem;
+            }
+
+            .timeline-highlights {
+                padding: 1.5rem;
+            }
+
+            .timeline-highlights li {
+                padding: 1rem 1rem 1rem 3rem;
+            }
+
+            .timeline-highlights li::before {
+                left: 1rem;
+                top: 1.3rem;
+            }
+
+            .timeline-header {
+                padding: 1.5rem 1.5rem 1.2rem;
+            }
+
+            .timeline-title {
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -853,13 +1313,16 @@
                         <div class="timeline-header">
                             <div>
                                 <h3 class="timeline-title">Tech, Research & Innovation Intern</h3>
-                                <p class="timeline-company">Draupadi Dream Trust</p>
+                                <p class="timeline-company">Draupadi Dream Trust · Delhi, India</p>
                             </div>
                             <span class="timeline-date">Jul 2025 – Aug 2025</span>
                         </div>
-                        <p class="timeline-description">
-                            Building AI models and interactive web dashboards for environmental and heritage research focused on River Yamuna. Contributing to data visualization, prototype development, and deploying FastAPI-based solutions.
-                        </p>
+                        <ul class="timeline-highlights">
+                            <li>Conducted independent research on Yamuna River, integrating religious, cultural, and environmental perspectives to support heritage and sustainability studies</li>
+                            <li>Analyzed Delhi's urban water crisis, including Delhi Jal Board (DJB) data and water-theft patterns, producing actionable summaries used in trust's internal reports</li>
+                            <li>Collaborated with technical wing on early-stage website redevelopment planning, preparing documentation and architecture drafts</li>
+                            <li>Designed data-processing scripts for field research, cutting manual entry work by ~40%</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -872,9 +1335,12 @@
                             </div>
                             <span class="timeline-date">Sept 2024 – Dec 2024</span>
                         </div>
-                        <p class="timeline-description">
-                            Developed UI components and backend modules for a music-tech platform. Improved page responsiveness and load performance by approximately 25% through optimization techniques.
-                        </p>
+                        <ul class="timeline-highlights">
+                            <li>Rebuilt large sections of React-based music-tech platform overnight before launch, learning React and modern JavaScript from scratch to fix last-minute deployment blockers</li>
+                            <li>Improved site load time by ≈25% through optimized rendering and asset management</li>
+                            <li>Created modular FastAPI micro-services to streamline backend integration and cut new-feature turnaround by ~30%</li>
+                            <li>Coordinated directly with design and backend teams to unify workflows and stabilize production release</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -883,17 +1349,129 @@
                         <div class="timeline-header">
                             <div>
                                 <h3 class="timeline-title">Website Developer</h3>
-                                <p class="timeline-company">Mangalam Valley Resort</p>
+                                <p class="timeline-company">Mangalam Valley Resort · Noida</p>
                             </div>
                             <span class="timeline-date">Jul 2023 – Nov 2023</span>
                         </div>
-                        <p class="timeline-description">
-                            Delivered complete booking-enabled website with integrated payment systems and provided ongoing post-deployment maintenance and support.
-                        </p>
+                        <ul class="timeline-highlights">
+                            <li>Developed complete booking-enabled website from scratch, integrating payment gateway and reservation management system</li>
+                            <li>Implemented responsive design ensuring seamless experience across desktop, tablet, and mobile devices</li>
+                            <li>Provided ongoing post-deployment maintenance, bug fixes, and feature enhancements based on client feedback</li>
+                            <li>Deployed and configured hosting infrastructure, managing domain setup and SSL certificates</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section
+    <!-- Contact Section -->
+    <section id="contact" style="background: var(--bg-secondary);">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">
+                    Open to collaboration, freelance projects, and full-time opportunities
+                </p>
+            </div>
+
+            <!-- Interactive Contact Cards -->
+            <div class="contact-cards-grid">
+                <!-- Email Card with Click-to-Reveal -->
+                <div class="contact-card-interactive email-card">
+                    <div class="card-front">
+                        <div class="contact-icon-large">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Me</h3>
+                        <p>Click to reveal my email address</p>
+                        <button class="reveal-btn">
+                            <i class="fas fa-eye"></i> Reveal Email
+                        </button>
+                    </div>
+                    <div class="card-back">
+                        <div class="contact-icon-large">
+                            <i class="fas fa-envelope-open"></i>
+                        </div>
+                        <h3>Email Address</h3>
+                        <a href="mailto:abheytiwarikvs@gmail.com" class="contact-info">
+                            abheytiwarikvs@gmail.com
+                        </a>
+                        <button class="copy-btn" data-copy="abheytiwarikvs@gmail.com">
+                            <i class="fas fa-copy"></i> Copy to Clipboard
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Phone Card with Hover Effect -->
+                <div class="contact-card-interactive phone-card">
+                    <div class="contact-icon-large">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call or Text</h3>
+                    <div class="phone-reveal">
+                        <div class="phone-blur">+91 ••••••••••</div>
+                        <div class="phone-clear">+91 9810440326</div>
+                    </div>
+                    <a href="tel:+919810440326" class="contact-link-btn">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+
+                <!-- Location Card -->
+                <div class="contact-card-interactive location-card">
+                    <div class="contact-icon-large">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Based In</h3>
+                    <p class="location-text">Noida, Uttar Pradesh</p>
+                    <p class="location-subtext">Delhi NCR, India</p>
+                    <div class="availability-badge">
+                        <i class="fas fa-check-circle"></i> Available for Remote Work
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Links Section -->
+            <div class="social-connect">
+                <h3>Find Me Online</h3>
+                <div class="social-links-grid">
+                    <a href="https://github.com/AbheyTiwari" target="_blank" class="social-link github">
+                        <i class="fab fa-github"></i>
+                        <div class="social-info">
+                            <span class="social-name">GitHub</span>
+                            <span class="social-handle">@AbheyTiwari</span>
+                        </div>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/abheytiwari/" target="_blank" class="social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="social-info">
+                            <span class="social-name">LinkedIn</span>
+                            <span class="social-handle">@abheytiwari</span>
+                        </div>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+
+                    <a href="mailto:abheytiwarikvs@gmail.com" class="social-link email">
+                        <i class="fas fa-envelope"></i>
+                        <div class="social-info">
+                            <span class="social-name">Email</span>
+                            <span class="social-handle">Direct Message</span>
+                        </div>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Response Time Badge -->
+            <div class="response-badge">
+                <i class="fas fa-clock"></i>
+                <span>Typically responds within 24 hours</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer
