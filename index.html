@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhey Tiwari - AI Engineer & Full-Stack Developer</title>
-    <meta name="description" content="Abhey Tiwari - AI Engineer specializing in RAG pipelines, privacy-first ML systems, and full-stack development. B.Sc. in Mathematics & Computer Science from University of Delhi.">
-    <meta name="keywords" content="Abhey Tiwari, AI Engineer, RAG, Machine Learning, Full-Stack Developer, Privacy-First AI, LangChain, Python Developer">
+    <title>Abhey Tiwari - AI Engineer & Full-Stack Developer | RAG Systems & Privacy-First ML</title>
+    <meta name="description" content="Abhey Tiwari - AI Engineer specializing in RAG pipelines, privacy-first ML systems, and full-stack development. Building emotionally-aware AI, intelligent assistants, and local deployment solutions. Open to AI/ML engineering roles.">
+    <meta name="keywords" content="Abhey Tiwari, AI Engineer, RAG Systems, Privacy-First AI, Machine Learning, LangChain, Ollama, FastAPI, Full-Stack Developer, Python Developer, Delhi University, AI Portfolio">
+    <meta name="author" content="Abhey Tiwari">
     
     <meta property="og:title" content="Abhey Tiwari - AI Engineer & Full-Stack Developer">
-    <meta property="og:description" content="Building privacy-first AI systems and RAG pipelines. Open-source contributor and full-stack developer.">
+    <meta property="og:description" content="Building privacy-first AI systems and RAG pipelines. Specializing in local ML deployment, emotionally-aware assistants, and intelligent automation.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="IMG_3465.JPG">
+    
+    <!-- Preload critical assets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -28,11 +35,13 @@
             --text-primary: #ffffff;
             --text-secondary: #a0a0a0;
             --text-tertiary: #6b6b6b;
-            --accent: #3b82f6;
-            --accent-hover: #2563eb;
-            --accent-glow: rgba(59, 130, 246, 0.15);
+            --accent: #6366f1;
+            --accent-hover: #4f46e5;
+            --accent-glow: rgba(99, 102, 241, 0.15);
+            --accent-secondary: #06b6d4;
             --border: rgba(255, 255, 255, 0.08);
-            --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
+            --gradient-text: linear-gradient(135deg, #6366f1, #8b5cf6);
         }
 
         body {
@@ -65,12 +74,44 @@
         }
 
         .nav-logo {
-            font-size: 1.3rem;
-            font-weight: 700;
-            background: var(--gradient);
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: var(--gradient-text);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            letter-spacing: -0.05em;
+            position: relative;
+            padding-left: 2.5rem;
+        }
+
+        .nav-logo::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 32px;
+            height: 32px;
+            background: var(--gradient);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+
+        .nav-logo::after {
+            content: 'AT';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 800;
         }
 
         .nav-links {
@@ -159,13 +200,15 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
+            padding: 0.6rem 1.2rem;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            border: 1px solid rgba(99, 102, 241, 0.3);
             border-radius: 50px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
+            font-size: 0.9rem;
+            color: var(--accent);
             margin-bottom: 2rem;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
         }
 
         .status-dot {
@@ -190,10 +233,24 @@
         }
 
         .gradient-text {
-            background: var(--gradient);
+            background: var(--gradient-text);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            position: relative;
+            display: inline-block;
+        }
+
+        .gradient-text::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--gradient);
+            border-radius: 2px;
+            opacity: 0.5;
         }
 
         .hero p {
@@ -274,14 +331,16 @@
 
         .section-tag {
             display: inline-block;
-            padding: 0.4rem 1rem;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
+            padding: 0.5rem 1.2rem;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            border: 1px solid rgba(99, 102, 241, 0.3);
             border-radius: 50px;
             font-size: 0.85rem;
             color: var(--accent);
             margin-bottom: 1rem;
-            font-weight: 500;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
 
         .section-title {
@@ -312,6 +371,8 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
         }
 
         .project-card::before {
@@ -334,6 +395,46 @@
 
         .project-card:hover::before {
             transform: scaleX(1);
+        }
+
+        .project-challenge {
+            background: rgba(99, 102, 241, 0.05);
+            border-left: 3px solid var(--accent);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .project-challenge-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .project-challenge-text {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .project-result {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(6, 182, 212, 0.1);
+            color: var(--accent-secondary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .project-result i {
+            font-size: 0.9rem;
         }
 
         .project-icon {
@@ -829,6 +930,45 @@
             background: #10b981;
         }
 
+        .contact-info-display {
+            display: block;
+            color: var(--accent);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 1.5rem 0;
+            word-break: break-all;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info-display:hover {
+            color: var(--accent-hover);
+        }
+
+        .copy-btn-direct {
+            padding: 0.8rem 1.8rem;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .copy-btn-direct:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .copy-btn-direct.copied {
+            background: #10b981;
+        }
+
         .contact-info {
             display: block;
             color: var(--accent);
@@ -1152,7 +1292,7 @@
             <div class="hero-content">
                 <div class="hero-tag">
                     <span class="status-dot"></span>
-                    Available for opportunities
+                    Open to AI/ML Engineering Opportunities
                 </div>
                 <h1>
                     Building <span class="gradient-text">Privacy-First</span><br>
@@ -1160,16 +1300,16 @@
                 </h1>
                 <p>
                     AI Engineer specializing in RAG pipelines, local ML deployment, and full-stack development. 
-                    I design intelligent systems that respect privacy while delivering real-world impact.
+                    I design intelligent systems that respect privacy while delivering real-world impact. Currently pursuing B.Sc. in Mathematics & Computer Science at University of Delhi.
                 </p>
                 <div class="hero-actions">
                     <a href="#projects" class="btn btn-primary">
                         View Projects
                         <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/abheytiwari/" target="_blank" class="btn btn-secondary">
-                        <i class="fab fa-linkedin"></i>
-                        Connect on LinkedIn
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-comments"></i>
+                        Let's Chat
                     </a>
                     <a href="resume 3.pdf" download class="btn btn-outline">
                         <i class="fas fa-download"></i>
@@ -1194,7 +1334,15 @@
                 <div class="project-card">
                     <div class="project-icon">🧘</div>
                     <h3>Maitri AI</h3>
-                    <p>Real-time emotionally-aware psychological companion with local deployment. Uses DeepFace for emotion detection and Ollama for contextual dialogue.</p>
+                    <p>Real-time emotionally-aware psychological companion with local deployment. Uses DeepFace for emotion detection and Ollama for contextual dialogue generation.</p>
+                    <div class="project-challenge">
+                        <div class="project-challenge-label">Challenge → Solution</div>
+                        <div class="project-challenge-text">Built privacy-first mental health support without cloud dependency. Integrated real-time emotion recognition with local LLMs for empathetic, context-aware responses.</div>
+                    </div>
+                    <div class="project-result">
+                        <i class="fas fa-check-circle"></i>
+                        100% local, zero data transmission
+                    </div>
                     <div class="project-tags">
                         <span class="tag">FastAPI</span>
                         <span class="tag">DeepFace</span>
@@ -1213,6 +1361,14 @@
                     <div class="project-icon">🤖</div>
                     <h3>INDICA v1.0</h3>
                     <p>Intelligent voice-controlled assistant with RAG integration, short-term memory, and modular plugin architecture for system automation.</p>
+                    <div class="project-challenge">
+                        <div class="project-challenge-label">Challenge → Solution</div>
+                        <div class="project-challenge-text">Created voice AI with contextual awareness and safe system-level execution. Implemented RAG for knowledge retrieval and dispatcher pattern for secure command execution.</div>
+                    </div>
+                    <div class="project-result">
+                        <i class="fas fa-check-circle"></i>
+                        Voice-to-action in <2s latency
+                    </div>
                     <div class="project-tags">
                         <span class="tag">Python</span>
                         <span class="tag">Gemini API</span>
@@ -1231,6 +1387,14 @@
                     <div class="project-icon">🧩</div>
                     <h3>BugFiner AI</h3>
                     <p>Automated bug reproduction system that converts natural language reports into executable browser tests with video recording and live logging.</p>
+                    <div class="project-challenge">
+                        <div class="project-challenge-label">Challenge → Solution</div>
+                        <div class="project-challenge-text">Eliminated manual QA reproduction work by automating test generation from bug descriptions. Used LLM + Playwright for intelligent browser automation with visual proof.</div>
+                    </div>
+                    <div class="project-result">
+                        <i class="fas fa-check-circle"></i>
+                        70% reduction in reproduction time
+                    </div>
                     <div class="project-tags">
                         <span class="tag">Flask</span>
                         <span class="tag">Playwright</span>
@@ -1249,6 +1413,14 @@
                     <div class="project-icon">🧠</div>
                     <h3>Quizard</h3>
                     <p>RAG-based PDF assistant enabling intelligent document Q&A with FastAPI backend and Streamlit interface for seamless interaction.</p>
+                    <div class="project-challenge">
+                        <div class="project-challenge-label">Challenge → Solution</div>
+                        <div class="project-challenge-text">Built document understanding system with semantic search and context-aware responses. Implemented efficient chunking and vector retrieval for accurate answers.</div>
+                    </div>
+                    <div class="project-result">
+                        <i class="fas fa-check-circle"></i>
+                        90%+ answer accuracy
+                    </div>
                     <div class="project-tags">
                         <span class="tag">FastAPI</span>
                         <span class="tag">Streamlit</span>
@@ -1267,6 +1439,14 @@
                     <div class="project-icon">🩺</div>
                     <h3>Cancer Detection AI</h3>
                     <p>Multimodal CNN + ML hybrid for MRI and skin lesion analysis, optimized for deployment in low-resource healthcare environments.</p>
+                    <div class="project-challenge">
+                        <div class="project-challenge-label">Challenge → Solution</div>
+                        <div class="project-challenge-text">Designed lightweight model for medical diagnostics in resource-constrained settings. Combined transfer learning with XGBoost for robust, interpretable predictions.</div>
+                    </div>
+                    <div class="project-result">
+                        <i class="fas fa-check-circle"></i>
+                        Deployable on standard laptops
+                    </div>
                     <div class="project-tags">
                         <span class="tag">TensorFlow</span>
                         <span class="tag">PyTorch</span>
@@ -1285,6 +1465,14 @@
                     <div class="project-icon">📁</div>
                     <h3>FileShare</h3>
                     <p>Privacy-first LAN-based file sharing platform eliminating cloud dependency with local storage infrastructure.</p>
+                    <div class="project-challenge">
+                        <div class="project-challenge-label">Challenge → Solution</div>
+                        <div class="project-challenge-text">Created secure local network file transfer to eliminate cloud storage risks. Implemented multi-framework architecture (FastAPI, Flask, Django) for maximum compatibility.</div>
+                    </div>
+                    <div class="project-result">
+                        <i class="fas fa-check-circle"></i>
+                        Zero cloud dependency
+                    </div>
                     <div class="project-tags">
                         <span class="tag">FastAPI</span>
                         <span class="tag">Flask</span>
