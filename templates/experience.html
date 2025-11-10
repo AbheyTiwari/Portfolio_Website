@@ -3,12 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhey Tiwari - AI Engineer & Full-Stack Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <title>Projects - Abhey Tiwari</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <style>
         * {
             margin: 0;
@@ -1126,6 +1122,16 @@
 <body data-theme="dark">
     <!-- Animated Background Canvas -->
     <canvas id="bg-canvas"></canvas>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button class="theme-btn active" data-theme="dark">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="theme-btn" data-theme="light">
+            <i class="fas fa-sun"></i>
+        </button>
+    </div>
 
     <!-- Navigation -->
     <nav class="nav">
