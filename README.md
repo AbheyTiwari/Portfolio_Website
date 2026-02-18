@@ -1,91 +1,189 @@
-#Abhey Tiwari - Personal Portfolio Website
-#This repository contains the source code for Abhey Tiwari's personal portfolio website, designed to showcase his expertise as a Software Engineer specializing in AI & Web Development. The website features a clean, modern design with interactive elements and is fully responsive across various devices.
+<div align="center">
+ 
+  <img src="./istockphoto-1469534804-1024x1024.jpg" width="100%" style="border-radius: 10px; margin-bottom: 20px;" alt="Abhey Tiwari Banner" />
 
-Features
-Responsive Design: Adapts seamlessly to desktop, tablet, and mobile screens.
+  # ABHEY TIWARI
+  
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=600&size=24&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Building+Privacy-First+AI+Systems;Local+LLM+Orchestration;Production-Grade+Infrastructure" alt="Typing SVG" />
+  </a>
 
-Animated Hero Section: Dynamic typing effect for name and profession.
+  <p align="center">
+    <b>AI Systems Builder</b> • <b>Full-Stack Developer</b> • <b>Privacy-First Engineering</b>
+  </p>
+  
+  <p align="center">
+    <i>"Building intelligent systems that work beyond localhost."</i>
+  </p>
 
-Skills Section: Dedicated section displaying technical skills efficiently with categorized cards.
+  <p align="center">
+    <a href="https://linkedin.com/in/abheytiwari">
+      <img src="https://img.shields.io/badge/LinkedIn-Connect-white?style=for-the-badge&logo=linkedin&logoColor=0077B5" />
+    </a>
+    &nbsp;
+    <a href="https://twitter.com/abhey_tiwari">
+      <img src="https://img.shields.io/badge/Twitter-Follow-white?style=for-the-badge&logo=x&logoColor=black" />
+    </a>
+    &nbsp;
+    <a href="mailto:abheytiwarikvs@gmail.com">
+      <img src="https://img.shields.io/badge/Email-Contact-white?style=for-the-badge&logo=gmail&logoColor=D14836" />
+    </a>
+    &nbsp;
+    <a href="https://abheytiwari.github.io/Portfolio_Website/">
+      <img src="https://img.shields.io/badge/Portfolio-Visit-white?style=for-the-badge&logo=google-chrome&logoColor=FF6B6B" />
+    </a>
+  </p>
+</div>
 
-Project Showcase: Grid layout for highlighting key projects.
+---
 
-Contact Form: A simple, design-only contact form for inquiries.
+## 🧠 About Me
 
-Resume Download: A prominent button to download the latest resume.
+```python
+class AbheyTiwari:
+    def __init__(self):
+        self.education = "BSc Mathematical Sciences @ Delhi University"
+        self.focus = ["Agentic AI", "RAG Systems", "Local LLMs"]
+        self.philosophy = "Understanding systems > framework hype"
+    
+    def stack(self):
+        return ["Python", "FastAPI", "Ollama", "FAISS", "Linux VMs"]
+    
+    def motto(self):
+        return "If it breaks in production, I want to know why"
+```
 
-Smooth Scrolling Navigation: Intuitive navigation between sections with active link highlighting.
+**I build privacy-first AI systems that respect user data and perform under pressure.** Whether it's optimizing RAG pipelines for semantic retrieval or deploying bare-metal Linux VMs for production ML, I focus on measurable impact over framework complexity.
 
-Translucent Navbar: Modern, frosted-glass effect for the fixed navigation bar.
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <h3>🔬 Research</h3>
+      <p>Mathematical modeling for sustainable tech</p>
+    </td>
+    <td align="center" width="33%">
+      <h3>🚀 Production</h3>
+      <p>Raw VM deployment & performance optimization</p>
+    </td>
+    <td align="center" width="33%">
+      <h3>🔐 Privacy</h3>
+      <p>Local LLM orchestration & edge computing</p>
+    </td>
+  </tr>
+</table>
 
-SEO Optimized: Includes meta tags for better search engine visibility and social media sharing.
+---
 
-Technologies Used
-HTML5: For structuring the web content.
+## 🚀 Featured Projects
 
-CSS3: For styling and animations, including a custom dark theme.
+| **Project** | **What It Does** |
+|:---:|:---|
+| <br/>**🧠 INDICA v1.0**<br/>*Voice-Controlled Cognitive Assistant* | **Modular agent framework with contextual memory.**<br/>• Dual-layer memory: short-term conversational + long-term semantic embeddings<br/>• Complete voice pipeline (STT → NLU → Skill Execution) with 10+ plugin modules<br/>• **Tech:** `Python` `RAG` `Gemini API` `AsyncIO` `Playwright` |
+| <br/>**🛡️ Maitri AI**<br/>*Privacy-First Mental Health Companion* | **Emotional intelligence that never leaves your machine.**<br/>• Real-time emotion detection using DeepFace (100% local)<br/>• Contextual dialogue generation via Ollama<br/>• **Tech:** `FastAPI` `Ollama` `DeepFace` `WebSockets`<br/>• **Impact:** Zero cloud data transmission |
+| <br/>**📚 Quizard**<br/>*RAG-Based PDF Q&A* | **Document understanding that actually works.**<br/>• Semantic chunking + vector retrieval for long documents<br/>• Context-aware answers with >90% accuracy on evaluation sets<br/>• **Tech:** `FastAPI` `Streamlit` `Gemini API` `Vector Embeddings` |
+| <br/>**🏥 Cancer Detection AI**<br/>*Lightweight Multimodal Diagnostics* | **Healthcare AI for low-resource environments.**<br/>• Hybrid CNN + XGBoost optimized for non-GPU laptops<br/>• MRI & skin-lesion analysis with interpretable predictions<br/>• **Tech:** `TensorFlow` `PyTorch` `XGBoost` |
 
-JavaScript (ES6+): For interactive elements, animations, and dynamic content.
+---
 
-Font Awesome: Used for icons (e.g., download, social media).
+## 💼 Experience
 
-Google Fonts: For modern and professional typography (Montserrat, Roboto).
+### **Tech, Research & Innovation Intern** | *Draupadi Dream Trust*
+*Jul 2025 – Aug 2025*
 
-Setup and Installation
-To get a local copy up and running, follow these simple steps:
+- Conducted independent research on the Yamuna River (religious, cultural, environmental perspectives)
+- Analyzed Delhi Jal Board datasets for urban water issues
+- Co-authored website redevelopment plans with technical documentation
 
-Clone the repository:
+### **Frontend Developer (Remote)** | *BeyondRiffs*
+*Sept 2024 – Dec 2024*
 
-git clone https://github.com/yourusername/your-portfolio-repo.git
+- Collaborated across frontend (React) and backend (FastAPI) layers
+- **25% load time reduction** (measured via Lighthouse before/after optimization)
+- **30% faster feature turnaround** with modular microservices architecture
+- Focused on performance optimization and API design
 
-(Replace yourusername/your-portfolio-repo with your actual GitHub repository link.)
+### **Website Developer** | *Mangalam Valley Resort*
+*Jul 2023 – Nov 2023*
 
-Navigate to the project directory:
+- Delivered booking-enabled website with integrated payments and SSL
+- Implemented responsive UX and managed full deployment workflow
 
-cd your-portfolio-repo
+---
 
-Open index.html:
-Simply open the index.html file in your preferred web browser.
+## 🛠️ Tech Stack
 
-Alternatively, you can use a local server (e.g., Live Server VS Code extension) for a better development experience.
+> Tools I've actually used in projects, not just tried once.
 
-Customization
-You can easily customize the content of this portfolio to make it your own:
+<div align="center">
 
-Personal Information (index.html):
+### 🧠 Intelligence Layer
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=chainlink&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
 
-Name and Title: Update the <title> tag in the <head> and the names array in the <script> block for the typing animation.
+### 🏗️ Application Layer
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 
-About Me Description: Edit the paragraphs within the <div class="profile-bio"> to reflect your background and aspirations.
+### ⚙️ Infrastructure & Data
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-00C4CC?style=flat-square)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B6B?style=flat-square)
 
-Contact Information: Update email in the footer mailto: link.
+</div>
 
-Social Media Links: Modify the href attributes in the footer .social-icons section with your LinkedIn, GitHub, and other profiles.
+---
 
-Profile Image (index.html):
+## 🎯 Current Focus
 
-Replace https://placehold.co/600x800/1a1a1a/f0f0f0?text=Your+Image+Here with the URL to your actual professional profile image. It's recommended to host your image and use its direct URL.
+<table>
+<tr>
+<td width="33%" align="center">
 
-Resume Download Link (index.html):
+### 🔨 Building
+Privacy-first agentic AI with local LLMs
 
-Locate the <a> tag with class="btn btn-download-resume".
+</td>
+<td width="33%" align="center">
 
-Change href="resume 3.pdf" to the correct path and filename of your resume. Ensure your resume PDF file is in the same directory as index.html or provide the correct relative/absolute path.
+### 📚 Learning
+Advanced RAG architectures & production ML systems
 
-You can also update the download attribute to change the default downloaded filename (e.g., download="YourName_Resume.pdf").
+</td>
+<td width="33%" align="center">
 
-Skills Section (index.html):
+### 🔬 Researching
+📄 Mathematical & biological modeling for sustainable tire waste degradation
 
-Edit the <li> items within each <div class="skill-category"> to list your specific languages, frameworks, AI/ML concepts, web dev skills, and tools.
+</td>
+</tr>
+</table>
 
-Projects Section (index.html):
+---
 
-Modify the <h3> and <p> tags within each <div class="project-card"> to describe your projects.
+<div align="center">
 
-Update the href attribute of the <a> tags with class="project-link" to link to your project repositories or live demos.
+### 💭 Philosophy
 
-SEO & Open Graph Tags (index.html - in <head>):
+*"Understanding systems > framework hype."*
 
-Update meta name="description" and meta name="keywords" for better search engine optimization.
+*"If it breaks in production, I want to know why."*
 
-Crucially, update meta property="og:image" and meta property="og:url" with your specific website image and URL for accurate social media previews when shared.
+<br/>
+
+<a href="mailto:abheytiwarikvs@gmail.com">
+  <img src="https://img.shields.io/badge/Let's_Build_Something-Contact_Me-58A6FF?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+
+<br/><br/>
+
+![Profile Views](https://komarev.com/ghpvc/?username=abheytiwari&color=58A6FF&style=flat-square)
+
+</div>
