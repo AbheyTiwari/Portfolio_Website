@@ -19,7 +19,8 @@ mobileToggle?.addEventListener('click', () => {
 
 
 // ── AI CHAT MODAL ────────────────────────────────────────────
-const API_URL = 'http://localhost:8000/chat'; // ← change to your deployed URL
+// Relative URL — works locally AND in prod without changing anything
+const API_URL = '/chat';
 
 const fab      = document.getElementById('aiFab');
 const modal    = document.getElementById('aiModal');

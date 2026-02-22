@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +7,15 @@
 
     <meta name="description" content="Abhey Tiwari is an AI Systems Builder focused on RAG pipelines, local LLM orchestration, and full-stack AI applications.">
     <meta name="author" content="Abhey Tiwari">
-    <meta name="robots" content="index, follow">
 
-    <!-- REPLACE AFTER DEPLOY -->
-    <link rel="canonical" href="https://YOUR-RENDER-APP.onrender.com/">
+    <!-- Canonical (REPLACE WITH YOUR RENDER URL) -->
+    <link rel="canonical" href="https://abheytiwari.onrender.com/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Abhey Tiwari | AI Systems Builder">
     <meta property="og:description" content="Building privacy-first AI systems, RAG pipelines, and full-stack ML applications.">
-    <meta property="og:image" content="https://YOUR-RENDER-APP.onrender.com/abhey.png">
-    <meta property="og:url" content="https://YOUR-RENDER-APP.onrender.com/">
+    <meta property="og:image" content="https://abheytiwari.onrender.com/abhey.png">
+    <meta property="og:url" content="https://abheytiwari.onrender.com/">
     <meta property="og:type" content="website">
 
     <!-- Favicon -->
@@ -39,20 +37,49 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Abhey Tiwari",
-        "url": "https://YOUR-RENDER-APP.onrender.com/",
+        "url": "https://abheytiwari.onrender.com/",
         "sameAs": [
             "https://github.com/AbheyTiwari",
             "https://www.linkedin.com/in/abheytiwari/"
         ],
-        "jobTitle": "AI Systems Builder"
+        "jobTitle": "AI Systems Builder",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Independent Developer"
+        }
     }
     </script>
 </head>
-
 <body>
 
-<!-- HERO -->
-<section class="hero">
+<!-- ── CURSOR (holographic canvas) ── -->
+<canvas id="cursor-canvas"></canvas>
+<div id="cursor-label"></div>
+
+<!-- ── NAV ── -->
+<nav class="nav">
+    <div class="nav-left">
+        <span class="nav-logo">ABHEY TIWARI</span>
+        <span class="nav-tag">AI Engineer / Full-Stack</span>
+    </div>
+    <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle">☰</button>
+</nav>
+
+<div class="nav-mobile" id="navMobile">
+    <a href="#work"       onclick="closeMobile()">Work</a>
+    <a href="#skills"     onclick="closeMobile()">Skills</a>
+    <a href="#experience" onclick="closeMobile()">Experience</a>
+    <a href="#contact"    onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
     <div class="hero-meta">
         <span>OPEN TO WORK</span>
         <span>NOIDA, INDIA</span>
@@ -60,25 +87,41 @@
     </div>
 
     <div class="hero-headline">
-        <h1>Abhey Tiwari</h1>
-        <h2>Building Privacy-First AI Systems</h2>
+        <h1 class="seo-name">Abhey Tiwari</h1>
+        <h1>
+            <span class="line-wrap"><span class="word">BUILDING</span></span>
+            <span class="line-wrap italic-serif"><span class="word">Privacy-First</span></span>
+            <span class="line-wrap"><span class="word">AI SYSTEMS</span></span>
+        </h1>
     </div>
 
     <div class="hero-visual">
-        <img src="abhey.png" alt="Abhey Tiwari">
+        <img src="abhey.png" alt="Abstract AI Visual">
     </div>
 
     <div class="hero-bottom">
-        <p>
-            AI Engineer specializing in RAG pipelines,
-            local ML deployment, and full-stack development.
+        <p class="hero-desc">
+            AI Engineer specializing in RAG pipelines,<br>
+            local ML deployment, and full-stack dev.<br>
+            Systems that respect privacy and deliver impact.
         </p>
-        <a href="resume4.2.pdf" download>Download Resume</a>
+        <div class="hero-actions">
+            <a href="#work" class="btn-raw">VIEW WORK ↓</a>
+            <a href="resume4.2.pdf" download class="btn-raw btn-outline">RESUME ↗</a>
+        </div>
+    </div>
+
+    <!-- REPLACE this div with <img src="your-render.png" alt=""> when ready -->
+    
+
+    <div class="scroll-hint">
+        <div class="scroll-circle">
+            <span>SCROLL</span>
+            <i class="fas fa-arrow-down"></i>
+        </div>
     </div>
 </section>
 
-<!-- Load JS -->
-<script src="script.js"></script>
 <!-- ── MARQUEE ── -->
 <div class="marquee-strip">
     <div class="marquee-track">
@@ -112,11 +155,7 @@
     <!-- FEATURED -->
     <article class="project-featured" data-num="01">
         <div class="project-img-wrap">
-            <!-- REPLACE with: <img src="maitri-screenshot.png" alt="Maitri AI"> -->
-            <div class="img-placeholder">
-                <span>PROJECT IMAGE</span>
-                <p>Maitri AI — Emotion Detection Interface</p>
-            </div>
+            <img src="maitri.jpeg" alt="Maitri AI Emotion Detection">
             <div class="project-img-label">Maitri AI / Privacy-First Mental Health</div>
             <a href="https://github.com/AbheyTiwari/Maitri.git" target="_blank" class="project-img-link">↗</a>
         </div>
@@ -345,9 +384,9 @@
         <h2 class="contact-title">GOT A<br><em>PROJECT?</em></h2>
         <div class="contact-right">
             <div class="contact-links">
-                <a href="/cdn-cgi/l/email-protection#b2d3d0dad7cbc6dbc5d3c0dbd9c4c1f2d5dfd3dbde9cd1dddf" class="contact-line">
+                <a href="mailto:abheytiwarikvs@gmail.com" class="contact-line">
                     <span class="contact-label">EMAIL</span>
-                    <span class="contact-val"><span class="__cf_email__" data-cfemail="5c3d3e34392528352b3d2e35372a2f1c3b313d3530723f3331">[email&#160;protected]</span> ↗</span>
+                    <span class="contact-val">abheytiwarikvs@gmail.com ↗</span>
                 </a>
                 <a href="tel:+919810440326" class="contact-line">
                     <span class="contact-label">PHONE</span>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-RENDER-APP.onrender.com/sitemap.xml
+Sitemap: https://abheytiwari.onrender.com/sitemap.xml
