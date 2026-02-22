@@ -1,572 +1,452 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Abhey Tiwari - AI Engineer & Full-Stack Developer specializing in privacy-first AI systems, RAG pipelines, and local ML deployment.">
-    <title>Abhey Tiwari - AI Engineer & Full-Stack Developer</title>
-    
+
+    <title>Abhey Tiwari | AI Systems Builder | RAG & Agentic AI Developer</title>
+
+    <meta name="description" content="Abhey Tiwari is an AI Systems Builder focused on RAG pipelines, local LLM orchestration, and full-stack AI applications.">
+    <meta name="author" content="Abhey Tiwari">
+
+    <!-- Canonical (REPLACE WITH YOUR RENDER URL) -->
+    <link rel="canonical" href="https://YOUR-RENDER-APP.onrender.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Abhey Tiwari | AI Systems Builder">
+    <meta property="og:description" content="Building privacy-first AI systems, RAG pipelines, and full-stack ML applications.">
+    <meta property="og:image" content="https://YOUR-RENDER-APP.onrender.com/abhey.png">
+    <meta property="og:url" content="https://YOUR-RENDER-APP.onrender.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="abhey.png">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Industrial Analog Stylesheet -->
+
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Abhey Tiwari",
+        "url": "https://YOUR-RENDER-APP.onrender.com/",
+        "sameAs": [
+            "https://github.com/AbheyTiwari",
+            "https://www.linkedin.com/in/abheytiwari/"
+        ],
+        "jobTitle": "AI Systems Builder",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Independent Developer"
+        }
+    }
+    </script>
 </head>
 <body>
-    <!-- Fixed Sidebar Navigation -->
-    <aside class="sidebar" role="navigation" aria-label="Main navigation">
-        <div class="sidebar-header">
-            <h1>Abhey Tiwari</h1>
-            <p class="subtitle">AI Engineer</p>
-        </div>
-        
-        <nav class="nav-main">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#experience" class="nav-link">Experience</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </nav>
-        
-        <div class="sidebar-footer">
-            <span class="status-indicator">Open to Work</span>
-        </div>
-    </aside>
-    
-    <!-- Mobile Menu Toggle -->
-    <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
-    
-    <!-- Main Content Area -->
-    <main class="content">
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-tag">
-                Open to AI/ML Engineering Opportunities
-            </div>
-            
-            <h1>
-                Building <span class="highlight">Privacy-First</span><br>
-                AI Systems That Matter
-            </h1>
-            
-            <p>
-                AI Engineer specializing in RAG pipelines, local ML deployment, and full-stack development. 
-                I design intelligent systems that respect privacy while delivering real-world impact.
-            </p>
-            
-            <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary">
-                    View Projects
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                    <i class="fas fa-comments"></i>
-                    Let's Chat
-                </a>
-                <a href="resume 4.2.pdf" download class="btn btn-secondary">
-                    <i class="fas fa-download"></i>
-                    Resume
-                </a>
-            </div>
-        </section>
-        
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="section-header">
-                <span class="section-tag">Selected Work</span>
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">
-                    Open-source projects combining AI, privacy, and practical engineering
-                </p>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- Project 1: Maitri AI -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon"></span>
-                        <div>
-                            <h3>Maitri AI</h3>
-                        </div>
-                    </div>
-                    
-                    <p>Real-time emotionally-aware psychological companion with local deployment. Uses DeepFace for emotion detection and Ollama for contextual dialogue generation.</p>
-                    
-                    <div class="project-challenge">
-                        <div class="project-challenge-label">Challenge → Solution</div>
-                        <div class="project-challenge-text">Built privacy-first mental health support without cloud dependency. Integrated real-time emotion recognition with local LLMs for empathetic, context-aware responses.</div>
-                    </div>
-                    
-                    <div class="project-result">
-                        <i class="fas fa-check-circle"></i>
-                        100% local, zero data transmission
-                    </div>
-                    
-                    <div class="project-tags">
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">DeepFace</span>
-                        <span class="tag">Ollama</span>
-                        <span class="tag">WebSockets</span>
-                    </div>
-                    
-                    <div class="project-links">
-                        <a href="https://github.com/AbheyTiwari/Maitri.git" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-                    </div>
-                </article>
-                
-                <!-- Project 2: INDICA v1.0 -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon"></span>
-                        <div>
-                            <h3>INDICA v1.0</h3>
-                        </div>
-                    </div>
-                    
-                    <p>Intelligent voice-controlled assistant with RAG integration, short-term memory, and modular plugin architecture for system automation.</p>
-                    
-                    <div class="project-challenge">
-                        <div class="project-challenge-label">Challenge → Solution</div>
-                        <div class="project-challenge-text">Created voice AI with contextual awareness and safe system-level execution. Implemented RAG for knowledge retrieval and dispatcher pattern for secure command execution.</div>
-                    </div>
-                    
-                    <div class="project-result">
-                        <i class="fas fa-check-circle"></i>
-                        Voice-to-action in <2s latency
-                    </div>
-                    
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Gemini API</span>
-                        <span class="tag">RAG</span>
-                        <span class="tag">Voice AI</span>
-                    </div>
-                    
-                    <div class="project-links">
-                        <a href="https://github.com/AbheyTiwari/INDICA" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-                    </div>
-                </article>
-                
-                <!-- Project 3: BugFiner AI -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon"></span>
-                        <div>
-                            <h3>BugFiner AI</h3>
-                        </div>
-                    </div>
-                    
-                    <p>Automated bug reproduction system that converts natural language reports into executable browser tests with video recording and live logging.</p>
-                    
-                    <div class="project-challenge">
-                        <div class="project-challenge-label">Challenge → Solution</div>
-                        <div class="project-challenge-text">Eliminated manual QA reproduction work by automating test generation from bug descriptions. Used LLM + Playwright for intelligent browser automation with visual proof.</div>
-                    </div>
-                    
-                    <div class="project-result">
-                        <i class="fas fa-check-circle"></i>
-                        70% reduction in reproduction time
-                    </div>
-                    
-                    <div class="project-tags">
-                        <span class="tag">Flask</span>
-                        <span class="tag">Playwright</span>
-                        <span class="tag">GPT</span>
-                        <span class="tag">Asyncio</span>
-                    </div>
-                    
-                    <div class="project-links">
-                        <a href="https://github.com/AbheyTiwari/AI_bug_finder..git" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-                    </div>
-                </article>
-                
-                <!-- Project 4: Quizard -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon"></span>
-                        <div>
-                            <h3>Quizard</h3>
-                        </div>
-                    </div>
-                    
-                    <p>RAG-based PDF assistant enabling intelligent document Q&A with FastAPI backend and Streamlit interface for seamless interaction.</p>
-                    
-                    <div class="project-challenge">
-                        <div class="project-challenge-label">Challenge → Solution</div>
-                        <div class="project-challenge-text">Built document understanding system with semantic search and context-aware responses. Implemented efficient chunking and vector retrieval for accurate answers.</div>
-                    </div>
-                    
-                    <div class="project-result">
-                        <i class="fas fa-check-circle"></i>
-                        90%+ answer accuracy
-                    </div>
-                    
-                    <div class="project-tags">
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">Streamlit</span>
-                        <span class="tag">Gemini API</span>
-                        <span class="tag">RAG</span>
-                    </div>
-                    
-                    <div class="project-links">
-                        <a href="https://github.com/AbheyTiwari/Quizard" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-                    </div>
-                </article>
-                
-                <!-- Project 5: Cancer Detection AI -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon"></span>
-                        <div>
-                            <h3>Cancer Detection AI</h3>
-                        </div>
-                    </div>
-                    
-                    <p>Multimodal CNN + ML hybrid for MRI and skin lesion analysis, optimized for deployment in low-resource healthcare environments.</p>
-                    
-                    <div class="project-challenge">
-                        <div class="project-challenge-label">Challenge → Solution</div>
-                        <div class="project-challenge-text">Designed lightweight model for medical diagnostics in resource-constrained settings. Combined transfer learning with XGBoost for robust, interpretable predictions.</div>
-                    </div>
-                    
-                    <div class="project-result">
-                        <i class="fas fa-check-circle"></i>
-                        Deployable on standard laptops
-                    </div>
-                    
-                    <div class="project-tags">
-                        <span class="tag">TensorFlow</span>
-                        <span class="tag">PyTorch</span>
-                        <span class="tag">XGBoost</span>
-                        <span class="tag">Medical AI</span>
-                    </div>
-                    
-                    <div class="project-links">
-                        <a href="https://github.com/AbheyTiwari/MRI-SkinCancer-AI" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-                    </div>
-                </article>
-                
-                <!-- Project 6: FileShare -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon"></span>
-                        <div>
-                            <h3>FileShare</h3>
-                        </div>
-                    </div>
-                    
-                    <p>Privacy-first LAN-based file sharing platform eliminating cloud dependency with local storage infrastructure.</p>
-                    
-                    <div class="project-challenge">
-                        <div class="project-challenge-label">Challenge → Solution</div>
-                        <div class="project-challenge-text">Created secure local network file transfer to eliminate cloud storage risks. Implemented multi-framework architecture for maximum compatibility.</div>
-                    </div>
-                    
-                    <div class="project-result">
-                        <i class="fas fa-check-circle"></i>
-                        Zero cloud dependency
-                    </div>
-                    
-                    <div class="project-tags">
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">Flask</span>
-                        <span class="tag">Django</span>
-                        <span class="tag">Privacy</span>
-                    </div>
-                    
-                    <div class="project-links">
-                        <a href="https://github.com/AbheyTiwari/FileShare" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
-        
-        <!-- Skills Section -->
-        <section id="skills">
-            <div class="section-header">
-                <span class="section-tag">Technical Expertise</span>
-                <h2 class="section-title">Skills & Technologies</h2>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-brain"></i>
-                        AI/ML Systems
-                    </h3>
-                    <div class="skill-list">
-                        <span class="skill-item">LLMs</span>
-                        <span class="skill-item">RAG Pipelines</span>
-                        <span class="skill-item">LangChain</span>
-                        <span class="skill-item">LlamaIndex</span>
-                        <span class="skill-item">Ollama</span>
-                        <span class="skill-item">CNNs</span>
-                        <span class="skill-item">NLP</span>
-                        <span class="skill-item">Transfer Learning</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-code"></i>
-                        Languages & Frameworks
-                    </h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">C++</span>
-                        <span class="skill-item">FastAPI</span>
-                        <span class="skill-item">Flask</span>
-                        <span class="skill-item">Django</span>
-                        <span class="skill-item">Streamlit</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">HTML5/CSS3</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-database"></i>
-                        Data & Vectors
-                    </h3>
-                    <div class="skill-list">
-                        <span class="skill-item">FAISS</span>
-                        <span class="skill-item">ChromaDB</span>
-                        <span class="skill-item">Vector Search</span>
-                        <span class="skill-item">Embeddings</span>
-                        <span class="skill-item">Semantic Retrieval</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>
-                        <i class="fas fa-server"></i>
-                        Infrastructure
-                    </h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Linux</span>
-                        <span class="skill-item">Git/GitHub</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">REST APIs</span>
-                        <span class="skill-item">WebSockets</span>
-                        <span class="skill-item">WebRTC</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Experience Section -->
-        <section id="experience">
-            <div class="section-header">
-                <span class="section-tag">Professional Journey</span>
-                <h2 class="section-title">Experience</h2>
-            </div>
-            
-            <div class="timeline">
-                <article class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3 class="timeline-title">Tech, Research & Innovation Intern</h3>
-                                <p class="timeline-company">
-                                    <i class="fas fa-building"></i>
-                                    Draupadi Dream Trust
-                                </p>
-                            </div>
-                            <span class="timeline-date">
-                                <i class="far fa-calendar"></i>
-                                Jul 2025 – Aug 2025
-                            </span>
-                        </div>
-                        <ul class="timeline-highlights">
-                            <li>Conducted independent research on Yamuna River, integrating religious, cultural, and environmental perspectives</li>
-                            <li>Analyzed Delhi's urban water crisis with DJB data, producing actionable summaries for internal reports</li>
-                            <li>Collaborated on website redevelopment planning with technical documentation</li>
-                            <li>Designed data-processing scripts reducing manual entry work by ~40%</li>
-                        </ul>
-                    </div>
-                </article>
-                
-                <article class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3 class="timeline-title">Frontend Developer</h3>
-                                <p class="timeline-company">
-                                    <i class="fas fa-building"></i>
-                                    BeyondRiffs (Remote)
-                                </p>
-                            </div>
-                            <span class="timeline-date">
-                                <i class="far fa-calendar"></i>
-                                Sept 2024 – Dec 2024
-                            </span>
-                        </div>
-                        <ul class="timeline-highlights">
-                            <li>Rebuilt large sections of React platform overnight before launch, learning React from scratch</li>
-                            <li>Improved site load time by ≈25% through optimized rendering and asset management</li>
-                            <li>Created modular FastAPI micro-services cutting new-feature turnaround by ~30%</li>
-                            <li>Coordinated with design and backend teams to stabilize production release</li>
-                        </ul>
-                    </div>
-                </article>
-                
-                <article class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3 class="timeline-title">Website Developer</h3>
-                                <p class="timeline-company">
-                                    <i class="fas fa-building"></i>
-                                    Mangalam Valley Resort
-                                </p>
-                            </div>
-                            <span class="timeline-date">
-                                <i class="far fa-calendar"></i>
-                                Jul 2023 – Nov 2023
-                            </span>
-                        </div>
-                        <ul class="timeline-highlights">
-                            <li>Developed complete booking-enabled website with payment gateway integration</li>
-                            <li>Implemented responsive design across all devices</li>
-                            <li>Provided ongoing maintenance and feature enhancements</li>
-                            <li>Deployed hosting infrastructure with domain setup and SSL certificates</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </section>
-        
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="section-header">
-                <span class="section-tag">Get In Touch</span>
-                <h2 class="section-title">Let's Connect</h2>
-                <p class="section-subtitle">
-                    Open to collaboration, freelance projects, and full-time opportunities
-                </p>
-            </div>
-            
-            <div class="contact-grid">
-                <article class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email Me</h3>
-                    <a href="mailto:abheytiwarikvs@gmail.com" class="contact-info">
-                        abheytiwarikvs@gmail.com
-                    </a>
-                    <button class="copy-btn" data-copy="abheytiwarikvs@gmail.com">
-                        <i class="fas fa-copy"></i>
-                        Copy to Clipboard
-                    </button>
-                </article>
-                
-                <article class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <h3>Call or Text</h3>
-                    <a href="tel:+919810440326" class="contact-info">
-                        +91 9810440326
-                    </a>
-                    <a href="tel:+919810440326" class="btn btn-primary">
-                        <i class="fas fa-phone"></i>
-                        Call Now
-                    </a>
-                </article>
-                
-                <article class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Based In</h3>
-                    <p class="contact-info">Noida, Uttar Pradesh</p>
-                    <p style="color: var(--color-text); font-size: 0.9rem; margin-bottom: 1rem;">Delhi NCR, India</p>
-                    <span class="project-result">
-                        <i class="fas fa-check-circle"></i>
-                        Available for Remote Work
-                    </span>
-                </article>
-            </div>
-            
-            <div class="text-center mb-xl">
-                <h3 class="section-title" style="font-size: 1.75rem; margin-bottom: var(--spacing-lg);">Find Me Online</h3>
-                
-                <div class="social-links">
-                    <a href="https://github.com/AbheyTiwari" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                        <div class="social-info">
-                            <span class="social-name">GitHub</span>
-                            <span class="social-handle">@AbheyTiwari</span>
-                        </div>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    
-                    <a href="https://www.linkedin.com/in/abheytiwari/" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                        <div class="social-info">
-                            <span class="social-name">LinkedIn</span>
-                            <span class="social-handle">@abheytiwari</span>
-                        </div>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    
-                    <a href="mailto:abheytiwarikvs@gmail.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                        <div class="social-info">
-                            <span class="social-name">Email</span>
-                            <span class="social-handle">abheytiwarikvs@gmail.com</span>
-                        </div>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer>
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <p style="color: var(--color-text); font-size: 0.875rem; margin-top: 1rem;">
-            © 2025 Abhey Tiwari. Built with passion and code.
+
+<!-- ── CURSOR (holographic canvas) ── -->
+<canvas id="cursor-canvas"></canvas>
+<div id="cursor-label"></div>
+
+<!-- ── NAV ── -->
+<nav class="nav">
+    <div class="nav-left">
+        <span class="nav-logo">ABHEY TIWARI</span>
+        <span class="nav-tag">AI Engineer / Full-Stack</span>
+    </div>
+    <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle">☰</button>
+</nav>
+
+<div class="nav-mobile" id="navMobile">
+    <a href="#work"       onclick="closeMobile()">Work</a>
+    <a href="#skills"     onclick="closeMobile()">Skills</a>
+    <a href="#experience" onclick="closeMobile()">Experience</a>
+    <a href="#contact"    onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
+    <div class="hero-meta">
+        <span>OPEN TO WORK</span>
+        <span>NOIDA, INDIA</span>
+        <span>2025</span>
+    </div>
+
+    <div class="hero-headline">
+        <h1 class="seo-name">Abhey Tiwari</h1>
+        <h1>
+            <span class="line-wrap"><span class="word">BUILDING</span></span>
+            <span class="line-wrap italic-serif"><span class="word">Privacy-First</span></span>
+            <span class="line-wrap"><span class="word">AI SYSTEMS</span></span>
+        </h1>
+    </div>
+
+    <div class="hero-visual">
+        <img src="abhey.png" alt="Abstract AI Visual">
+    </div>
+
+    <div class="hero-bottom">
+        <p class="hero-desc">
+            AI Engineer specializing in RAG pipelines,<br>
+            local ML deployment, and full-stack dev.<br>
+            Systems that respect privacy and deliver impact.
         </p>
-    </footer>
+        <div class="hero-actions">
+            <a href="#work" class="btn-raw">VIEW WORK ↓</a>
+            <a href="resume4.2.pdf" download class="btn-raw btn-outline">RESUME ↗</a>
+        </div>
+    </div>
+
+    <!-- REPLACE this div with <img src="your-render.png" alt=""> when ready -->
     
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-    
-    <!-- Industrial Analog JavaScript -->
-    <script src="script.js"></script>
+
+    <div class="scroll-hint">
+        <div class="scroll-circle">
+            <span>SCROLL</span>
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </div>
+</section>
+
+<!-- ── MARQUEE ── -->
+<div class="marquee-strip">
+    <div class="marquee-track">
+        <span>RAG PIPELINES</span><span class="dot">✦</span>
+        <span>LOCAL LLMs</span><span class="dot">✦</span>
+        <span>FASTAPI</span><span class="dot">✦</span>
+        <span>PRIVACY-FIRST</span><span class="dot">✦</span>
+        <span>OLLAMA</span><span class="dot">✦</span>
+        <span>DEEPFACE</span><span class="dot">✦</span>
+        <span>VECTOR SEARCH</span><span class="dot">✦</span>
+        <span>MEDICAL AI</span><span class="dot">✦</span>
+        <span>RAG PIPELINES</span><span class="dot">✦</span>
+        <span>LOCAL LLMs</span><span class="dot">✦</span>
+        <span>FASTAPI</span><span class="dot">✦</span>
+        <span>PRIVACY-FIRST</span><span class="dot">✦</span>
+        <span>OLLAMA</span><span class="dot">✦</span>
+        <span>DEEPFACE</span><span class="dot">✦</span>
+        <span>VECTOR SEARCH</span><span class="dot">✦</span>
+        <span>MEDICAL AI</span><span class="dot">✦</span>
+    </div>
+</div>
+
+<!-- ── PROJECTS ── -->
+<section class="projects" id="work">
+    <div class="section-label">
+        <span>SELECTED WORK</span>
+        <span>06 PROJECTS</span>
+    </div>
+    <h2 class="section-title-xl">OUR<br><em>WORKS</em></h2>
+
+    <!-- FEATURED -->
+    <article class="project-featured" data-num="01">
+        <div class="project-img-wrap">
+            <!-- REPLACE with: <img src="maitri-screenshot.png" alt="Maitri AI"> -->
+            <div class="img-placeholder">
+                <span>PROJECT IMAGE</span>
+                <p>Maitri AI — Emotion Detection Interface</p>
+            </div>
+            <div class="project-img-label">Maitri AI / Privacy-First Mental Health</div>
+            <a href="https://github.com/AbheyTiwari/Maitri.git" target="_blank" class="project-img-link">↗</a>
+        </div>
+        <div class="project-info">
+            <h3>MAITRI AI</h3>
+            <p>Real-time emotionally-aware psychological companion. DeepFace for emotion detection. Ollama for local dialogue. 100% offline — zero cloud transmission.</p>
+            <div class="project-tech">
+                <span>FastAPI</span><span>DeepFace</span><span>Ollama</span><span>WebSockets</span>
+            </div>
+            <a href="https://github.com/AbheyTiwari/Maitri.git" target="_blank" class="project-cta">VIEW ON GITHUB ↗</a>
+        </div>
+    </article>
+
+    <!-- GRID -->
+    <div class="projects-grid">
+
+        <article class="project-card" data-num="02">
+            <div class="project-img-wrap">
+                <!-- REPLACE with: <img src="indica-screenshot.png" alt="INDICA"> -->
+                <div class="img-placeholder">
+                    <span>PROJECT IMAGE</span>
+                    <p>INDICA — Voice AI Interface</p>
+                </div>
+                <div class="project-img-label">INDICA v1.0 / Voice AI</div>
+                <a href="https://github.com/AbheyTiwari/INDICA" target="_blank" class="project-img-link">↗</a>
+            </div>
+            <h3>INDICA v1.0</h3>
+            <p>Voice-controlled assistant with RAG, short-term memory, modular plugin architecture. Voice-to-action under 2s.</p>
+            <div class="project-tech">
+                <span>Python</span><span>Gemini API</span><span>RAG</span><span>Voice AI</span>
+            </div>
+            <a href="https://github.com/AbheyTiwari/INDICA" target="_blank" class="project-cta">GITHUB ↗</a>
+        </article>
+
+        <article class="project-card" data-num="03">
+            <div class="project-img-wrap">
+                <img src="bugfinner.jfif" alt="BugFiner AI">
+                <div class="project-img-label">BugFiner AI / QA Automation</div>
+                <a href="https://github.com/AbheyTiwari/AI_bug_finder..git" target="_blank" class="project-img-link">↗</a>
+            </div>
+            <h3>BUGFINER AI</h3>
+            <p>Natural language bug reports → executable browser tests with video proof. 70% less reproduction time.</p>
+            <div class="project-tech">
+                <span>Flask</span><span>Playwright</span><span>GPT</span><span>Asyncio</span>
+            </div>
+            <a href="https://github.com/AbheyTiwari/AI_bug_finder..git" target="_blank" class="project-cta">GITHUB ↗</a>
+        </article>
+
+        <article class="project-card" data-num="04">
+            <div class="project-img-wrap">
+                <img src="quizard.jpg" alt="Quizard RAG PDF Assistant">
+                <div class="project-img-label">Quizard / RAG PDF Assistant</div>
+                <a href="https://github.com/AbheyTiwari/Quizard" target="_blank" class="project-img-link">↗</a>
+            </div>
+            <h3>QUIZARD</h3>
+            <p>RAG-based PDF assistant with semantic search and context-aware answers. 90%+ accuracy on document Q&A.</p>
+            <div class="project-tech">
+                <span>FastAPI</span><span>Streamlit</span><span>Gemini</span><span>RAG</span>
+            </div>
+            <a href="https://github.com/AbheyTiwari/Quizard" target="_blank" class="project-cta">GITHUB ↗</a>
+        </article>
+
+        <article class="project-card" data-num="05">
+            <div class="project-img-wrap">
+                <img src="cancer.jpg" alt="Cancer Detection AI">
+                <div class="project-img-label">Cancer Detection AI / Medical</div>
+                <a href="https://github.com/AbheyTiwari/MRI-SkinCancer-AI" target="_blank" class="project-img-link">↗</a>
+            </div>
+            <h3>CANCER DETECTION AI</h3>
+            <p>CNN + XGBoost hybrid for MRI and skin lesion analysis. Deployable on standard laptops — no GPU needed.</p>
+            <div class="project-tech">
+                <span>TensorFlow</span><span>PyTorch</span><span>XGBoost</span><span>Medical AI</span>
+            </div>
+            <a href="https://github.com/AbheyTiwari/MRI-SkinCancer-AI" target="_blank" class="project-cta">GITHUB ↗</a>
+        </article>
+
+        <article class="project-card" data-num="06">
+            <div class="project-img-wrap">
+                <img src="fileshare.jfif" alt="FileShare AI">
+                <div class="project-img-label">FileShare / Privacy LAN</div>
+                <a href="https://github.com/AbheyTiwari/FileShare" target="_blank" class="project-img-link">↗</a>
+            </div>
+            <h3>FILESHARE</h3>
+            <p>Privacy-first LAN file sharing. Zero cloud dependency. FastAPI + Flask + Django multi-framework architecture.</p>
+            <div class="project-tech">
+                <span>FastAPI</span><span>Flask</span><span>Django</span><span>Privacy</span>
+            </div>
+            <a href="https://github.com/AbheyTiwari/FileShare" target="_blank" class="project-cta">GITHUB ↗</a>
+        </article>
+
+    </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section class="skills-section" id="skills">
+    <div class="section-label">
+        <span>TECHNICAL STACK</span>
+        <span>SKILLS</span>
+    </div>
+    <div class="skills-layout">
+        <h2 class="skills-title">WHAT<br>I <em>BUILD</em><br>WITH</h2>
+        <div class="skills-columns">
+            <div class="skill-col">
+                <h4>AI / ML SYSTEMS</h4>
+                <ul>
+                    <li>LLMs & Prompt Engineering</li>
+                    <li>RAG Pipelines</li>
+                    <li>LangChain / LlamaIndex</li>
+                    <li>Ollama (local inference)</li>
+                    <li>CNNs & Transfer Learning</li>
+                    <li>NLP</li>
+                </ul>
+            </div>
+            <div class="skill-col">
+                <h4>LANGUAGES & FRAMEWORKS</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>FastAPI / Flask / Django</li>
+                    <li>Streamlit</li>
+                    <li>JavaScript / HTML / CSS</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="skill-col">
+                <h4>DATA & VECTORS</h4>
+                <ul>
+                    <li>FAISS</li>
+                    <li>ChromaDB</li>
+                    <li>Vector Search</li>
+                    <li>Embeddings</li>
+                    <li>Semantic Retrieval</li>
+                </ul>
+            </div>
+            <div class="skill-col">
+                <h4>INFRASTRUCTURE</h4>
+                <ul>
+                    <li>Linux</li>
+                    <li>Git / GitHub</li>
+                    <li>Docker</li>
+                    <li>REST APIs</li>
+                    <li>WebSockets</li>
+                    <li>WebRTC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section class="exp-section" id="experience">
+    <div class="section-label">
+        <span>PROFESSIONAL JOURNEY</span>
+        <span>EXPERIENCE</span>
+    </div>
+    <div class="exp-list">
+
+        <article class="exp-item">
+            <div class="exp-left">
+                <span class="exp-num">01</span>
+                <span class="exp-date">JUL — AUG 2025</span>
+            </div>
+            <div class="exp-mid">
+                <h3>TECH, RESEARCH & INNOVATION INTERN</h3>
+                <p class="exp-company">Draupadi Dream Trust</p>
+                <ul>
+                    <li>Independent research on Yamuna River — religious, cultural, environmental</li>
+                    <li>Analyzed Delhi's urban water crisis with DJB data</li>
+                    <li>Data-processing scripts reducing manual entry by ~40%</li>
+                    <li>Website redevelopment planning with technical documentation</li>
+                </ul>
+            </div>
+            <div class="exp-right">
+                <span>Research</span><span>Data</span><span>Python</span>
+            </div>
+        </article>
+
+        <article class="exp-item">
+            <div class="exp-left">
+                <span class="exp-num">02</span>
+                <span class="exp-date">SEP — DEC 2024</span>
+            </div>
+            <div class="exp-mid">
+                <h3>FRONTEND DEVELOPER</h3>
+                <p class="exp-company">BeyondRiffs (Remote)</p>
+                <ul>
+                    <li>Rebuilt large React platform sections overnight before launch</li>
+                    <li>Improved site load time by ≈25% through rendering optimisation</li>
+                    <li>FastAPI micro-services cutting feature turnaround by ~30%</li>
+                </ul>
+            </div>
+            <div class="exp-right">
+                <span>React</span><span>FastAPI</span><span>Frontend</span>
+            </div>
+        </article>
+
+        <article class="exp-item">
+            <div class="exp-left">
+                <span class="exp-num">03</span>
+                <span class="exp-date">JUL — NOV 2023</span>
+            </div>
+            <div class="exp-mid">
+                <h3>WEBSITE DEVELOPER</h3>
+                <p class="exp-company">Mangalam Valley Resort</p>
+                <ul>
+                    <li>Complete booking-enabled website with payment gateway</li>
+                    <li>Responsive design, hosting infrastructure, SSL certificates</li>
+                    <li>Ongoing maintenance and feature enhancements</li>
+                </ul>
+            </div>
+            <div class="exp-right">
+                <span>Web Dev</span><span>Payments</span><span>Deploy</span>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="contact-section" id="contact">
+    <div class="section-label">
+        <span>LET'S WORK TOGETHER</span>
+        <span>CONTACT</span>
+    </div>
+    <div class="contact-layout">
+        <h2 class="contact-title">GOT A<br><em>PROJECT?</em></h2>
+        <div class="contact-right">
+            <div class="contact-links">
+                <a href="/cdn-cgi/l/email-protection#b2d3d0dad7cbc6dbc5d3c0dbd9c4c1f2d5dfd3dbde9cd1dddf" class="contact-line">
+                    <span class="contact-label">EMAIL</span>
+                    <span class="contact-val"><span class="__cf_email__" data-cfemail="5c3d3e34392528352b3d2e35372a2f1c3b313d3530723f3331">[email&#160;protected]</span> ↗</span>
+                </a>
+                <a href="tel:+919810440326" class="contact-line">
+                    <span class="contact-label">PHONE</span>
+                    <span class="contact-val">+91 9810440326 ↗</span>
+                </a>
+                <a href="https://github.com/AbheyTiwari" target="_blank" class="contact-line">
+                    <span class="contact-label">GITHUB</span>
+                    <span class="contact-val">@AbheyTiwari ↗</span>
+                </a>
+                <a href="https://www.linkedin.com/in/abheytiwari/" target="_blank" class="contact-line">
+                    <span class="contact-label">LINKEDIN</span>
+                    <span class="contact-val">@abheytiwari ↗</span>
+                </a>
+            </div>
+            <div class="status-pill">● OPEN TO WORK — REMOTE / NCR</div>
+        </div>
+    </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+    <span>© 2025 ABHEY TIWARI</span>
+    <span>AI ENGINEER — NOIDA, INDIA</span>
+    <span>BUILT WITH CODE & OBSESSION</span>
+</footer>
+
+<!-- ── AI ASSISTANT FAB ── -->
+<button class="ai-fab" id="aiFab" title="Talk to Abhey's AI Assistant">
+    <span class="ai-fab-icon">✦</span>
+    <span class="ai-fab-label">ASK ABHEY'S AI</span>
+</button>
+
+<!-- ── AI CHAT MODAL ── -->
+<div class="ai-overlay" id="aiOverlay"></div>
+<div class="ai-modal" id="aiModal">
+    <div class="ai-modal-header">
+        <div>
+            <h3>ABHEY'S AI ASSISTANT</h3>
+            <p>Powered by Gemini · Knows everything about Abhey</p>
+        </div>
+        <button class="ai-close" id="aiClose">✕</button>
+    </div>
+    <div class="ai-messages" id="aiMessages">
+        <div class="ai-msg assistant">
+            <div class="msg-bubble">
+                Hey! I'm Abhey's AI assistant. Ask me about his projects, skills, or availability — or let me know if you'd like to get in touch with him.
+            </div>
+        </div>
+    </div>
+    <form class="ai-input-row" id="aiForm">
+        <input type="text" id="aiInput" placeholder="Ask about Abhey's work..." autocomplete="off">
+        <button type="submit">SEND ↗</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+<script src="cursor-holo.js"></script>
 </body>
 </html>
