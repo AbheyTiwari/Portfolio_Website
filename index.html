@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,20 @@
 
     <meta name="description" content="Abhey Tiwari is an AI Systems Builder focused on RAG pipelines, local LLM orchestration, and full-stack AI applications.">
     <meta name="author" content="Abhey Tiwari">
+    <meta name="robots" content="index, follow">
 
-    <!-- Canonical (REPLACE WITH YOUR RENDER URL) -->
+    <!-- REPLACE WITH YOUR REAL RENDER URL AFTER DEPLOY -->
     <link rel="canonical" href="https://YOUR-RENDER-APP.onrender.com/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Abhey Tiwari | AI Systems Builder">
     <meta property="og:description" content="Building privacy-first AI systems, RAG pipelines, and full-stack ML applications.">
-    <meta property="og:image" content="https://YOUR-RENDER-APP.onrender.com/abhey.png">
+    <meta property="og:image" content="https://YOUR-RENDER-APP.onrender.com/static/abhey.png">
     <meta property="og:url" content="https://YOUR-RENDER-APP.onrender.com/">
     <meta property="og:type" content="website">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="abhey.png">
+    <link rel="icon" type="image/png" href="/static/abhey.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +31,8 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link rel="stylesheet" href="styles.css">
+    <!-- Static CSS -->
+    <link rel="stylesheet" href="/static/styles.css">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -50,9 +53,10 @@
     }
     </script>
 </head>
+
 <body>
 
-<!-- ── CURSOR (holographic canvas) ── -->
+<!-- ── CURSOR ── -->
 <canvas id="cursor-canvas"></canvas>
 <div id="cursor-label"></div>
 
@@ -72,10 +76,10 @@
 </nav>
 
 <div class="nav-mobile" id="navMobile">
-    <a href="#work"       onclick="closeMobile()">Work</a>
-    <a href="#skills"     onclick="closeMobile()">Skills</a>
+    <a href="#work" onclick="closeMobile()">Work</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
     <a href="#experience" onclick="closeMobile()">Experience</a>
-    <a href="#contact"    onclick="closeMobile()">Contact</a>
+    <a href="#contact" onclick="closeMobile()">Contact</a>
 </div>
 
 <!-- ── HERO ── -->
@@ -87,32 +91,32 @@
     </div>
 
     <div class="hero-headline">
+        <!-- SINGLE H1 FOR SEO -->
         <h1 class="seo-name">Abhey Tiwari</h1>
-        <h1>
+
+        <!-- Styled Headline -->
+        <h2>
             <span class="line-wrap"><span class="word">BUILDING</span></span>
             <span class="line-wrap italic-serif"><span class="word">Privacy-First</span></span>
             <span class="line-wrap"><span class="word">AI SYSTEMS</span></span>
-        </h1>
+        </h2>
     </div>
 
     <div class="hero-visual">
-        <img src="abhey.png" alt="Abstract AI Visual">
+        <img src="/static/abhey.png" alt="Abhey Tiwari AI Systems Visual">
     </div>
 
     <div class="hero-bottom">
         <p class="hero-desc">
             AI Engineer specializing in RAG pipelines,<br>
-            local ML deployment, and full-stack dev.<br>
+            local ML deployment, and full-stack development.<br>
             Systems that respect privacy and deliver impact.
         </p>
         <div class="hero-actions">
             <a href="#work" class="btn-raw">VIEW WORK ↓</a>
-            <a href="resume4.2.pdf" download class="btn-raw btn-outline">RESUME ↗</a>
+            <a href="/static/resume4.2.pdf" download class="btn-raw btn-outline">RESUME ↗</a>
         </div>
     </div>
-
-    <!-- REPLACE this div with <img src="your-render.png" alt=""> when ready -->
-    
 
     <div class="scroll-hint">
         <div class="scroll-circle">
@@ -122,6 +126,8 @@
     </div>
 </section>
 
+<!-- Load JS -->
+<script src="/static/script.js"></script>
 <!-- ── MARQUEE ── -->
 <div class="marquee-strip">
     <div class="marquee-track">
