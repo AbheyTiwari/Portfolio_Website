@@ -240,7 +240,7 @@ async def chat(req: ChatRequest):
 
     try:
         response = client.models.generate_content(
-            model="gemini-2.0-flash",
+            model="gemini-2.5-flash",
             contents=recent,
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_PROMPT,
@@ -304,4 +304,5 @@ if __name__ == "__main__":
     print(f"\n🚀  http://localhost:{PORT}")
     print(f"    AI:    {'✅' if GEMINI_API_KEY else '⚠️  set GEMINI_API_KEY'}")
     print(f"    Email: {'✅' if SMTP_EMAIL else '⚠️  set SMTP_EMAIL + SMTP_PASSWORD'}\n")
+
     uvicorn.run("main:app", host="0.0.0.0", port=PORT, reload=False)
