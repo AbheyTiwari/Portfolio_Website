@@ -8,7 +8,7 @@
     --black:  #0a0a0a;
     --white:  #f0ede8;
     --grey:   #111111;
-    --muted:  #555555;
+    --muted:  #999999;
     --accent: #e8e0d4;
     --nav-h:  60px;
 
@@ -30,7 +30,7 @@ body {
     background: var(--black);
     color: var(--white);
     font-family: var(--font-body);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -226,7 +226,7 @@ body {
 .hero-desc {
     font-size: 0.93rem;
     line-height: 1.75;
-    color: var(--muted);
+    color: rgba(255,255,255,0.85);
     max-width: 340px;
 }
 
@@ -491,7 +491,7 @@ body {
 .project-info p, .project-card > p {
     font-size: 0.88rem;
     line-height: 1.68;
-    color: var(--muted);
+    color: rgba(255,255,255,0.85);
     max-width: 400px;
 }
 
@@ -604,8 +604,8 @@ body {
 
 .skill-col ul li {
     font-size: 0.88rem;
-    font-weight: 300;
-    color: rgba(255,255,255,0.55);
+    font-weight: 400;
+    color: rgba(255,255,255,0.85);
     padding-bottom: 0.55rem;
     border-bottom: 1px solid rgba(255,255,255,0.04);
     transition: color 0.2s;
@@ -670,7 +670,7 @@ body {
 
 .exp-mid ul li {
     font-size: 0.87rem;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.85);
     padding-left: 1rem;
     position: relative;
     line-height: 1.55;
@@ -749,7 +749,7 @@ body {
 
 .contact-val {
     font-size: 0.88rem;
-    color: rgba(255,255,255,0.65);
+    color: rgba(255,255,255,0.9);
     transition: color 0.2s;
 }
 
@@ -894,7 +894,7 @@ body {
     font-size: 0.85rem;
     line-height: 1.55;
     font-family: var(--font-body);
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .ai-msg.assistant .msg-bubble {
