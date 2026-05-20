@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://abheytiwari.onrender.com/sitemap.xml
+Sitemap: https://portfolio-website-ckqp.onrender.com/sitemap.xml
